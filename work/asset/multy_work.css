@@ -1,0 +1,398 @@
+:root {
+    --orange: #F95153;
+    --blue: #0C0F30;
+    --white: #fff;
+    --square-w: 7.3vw;
+    --square-h: 13vh;
+    --gap-w: calc((var(--square-w) / 10) * 2);
+    --gap-h:calc((var(--square-h) /10) * 2);
+    --letter-w: 4.2vw;
+    letter-spacing: 0.7px;
+  }
+  
+  html{
+    margin: 0;
+    background-color: var(--orange);
+    font-family:"Inria Sans" ;
+    cursor:cell;
+  }
+  
+  /* ------------------------------------------------------- */
+  
+  /* ---------nav bar--------------- */
+  
+  nav {
+    color: var(--orange);
+    position: fixed;
+    z-index: 1;
+  }
+  
+  .pic1{
+    width: calc(var(--square-h) *0.7);
+    position:absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *0.47);
+    left: calc(var(--square-w) * 0.7);
+  }
+  
+  .nav_container2 .designing_section {
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *7);
+    left: calc(var(--square-w) * 12.2);
+  }
+  
+  .nav_container2 .sayhi_section {
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-top: calc(var(--square-h) *0.5);
+    left: calc(var(--square-w) * 12.5);
+  }
+  
+  .nav_container2 .myself_section {
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *7);
+    left: calc(var(--square-w) * 0.7);
+  }
+  
+  .nav_container3 .fbook_section {
+    opacity: 40% ;
+    transform: rotate(-90deg);
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *3);
+    left: calc(var(--square-w) * 12.8);
+  }
+  
+  .nav_container3 .insta_section {
+    opacity: 40% ;
+    transform: rotate(-90deg);
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *4);
+    left: calc(var(--square-w) * 12.81);
+  }
+  
+  .nav_container3 .email_section{
+    opacity: 40% ;
+    transform: rotate(-90deg);
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *5);
+    left: calc(var(--square-w) * 12.76);
+  }
+
+/*----------------text-----------------*/
+
+.title{
+  font-size: min(max(11px, 1.8vw), 1.8vw);
+  position: absolute;
+  top: calc(var(--square-h) *1.5);
+  left: calc(var(--square-w) * 7.4);
+
+  color: var(--blue);
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .work_content{
+    position: absolute;
+    top: calc(var(--square-h) *1.2);
+    left: calc(var(--square-w) * 1.5);
+
+    height: calc(var(--square-h) *5.8);
+    width: calc(var(--square-w) *10.5);
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .work_info{
+    text-align: justify;
+    width: 100%;
+    color: var(--blue);
+    font-size: min(max(10px, 1.3vw), 22px);
+
+    align-content: center;
+    justify-content: center;
+
+  }
+
+
+/*----------------images-----------------*/
+
+  .slider_container{
+    height: calc(var(--square-h) *5);
+    width: calc(var(--square-w) *12);
+    align-items: center;
+    display: flex;
+  }
+  
+  .slider{
+    min-width: 40rem;
+    max-width: calc(var(--square-w) *2);
+    height: calc(var(--square-h) *5);
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  
+  .slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+  }
+  
+  .slider .list img{
+    margin-top: 150px;
+    min-width: calc(var(--square-h) *3);
+    max-width: calc(var(--square-h) *30);
+    height: 50%;
+    object-fit:cover;
+  }
+  
+  .slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .slider .buttons button{
+    border-radius: 5px;
+    background-color:#0C0F30;
+    color:var(--white);
+    border: none;
+    font-size: 1.7rem;
+    transition: 200ms;
+  }
+  
+  .slider .buttons button:hover{
+    cursor: pointer;
+    color:var(--white);
+  }
+  
+  .slider .dots{
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    color:var(--white);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slider .dots li{
+    list-style: none;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--blue);
+    margin: 0.5rem;
+    border-radius: 1rem;
+    transition: 0.5s;
+  }
+  
+  .slider .dots li.active{
+    width: 1.5rem;
+  }
+  
+    /* For table phones: */
+    @media only screen and (max-width: 1600px) {
+        .nav_container2 .designing_section {
+            font-size: min(max(11px, 1.3vw), 22px);
+            text-decoration-line:none;
+            color: var(--white);
+            height: fit-content;
+            position: absolute;
+            margin-right: var(--square-w);
+            margin-top: calc(var(--square-h) *7);
+            left: calc(var(--square-w) * 11);
+          }        
+          .nav_container2 .sayhi_section {
+            font-size: min(max(11px, 1.3vw), 22px);
+            text-decoration-line:none;
+            color: var(--white);
+            height: fit-content;
+            position: absolute;
+            margin-top: calc(var(--square-h) *7);
+            left: calc(var(--square-w) * 6.5);
+          }
+        .nav_container3 .fbook_section {
+          opacity: 0% ;
+        }
+        .nav_container3 .insta_section {
+          opacity: 0%;
+        }       
+        .nav_container3 .email_section{
+          opacity: 0%;
+        }
+    
+
+        .title{
+          font-size: min(max(11px, 1.3vw), 22px);
+          position: absolute;
+          top: calc(var(--square-h) *0.8);
+          left: calc(var(--square-w) *5.6);
+        
+            overflow: hidden;
+            position: absolute;
+          }
+
+
+        .work_content{
+            position: absolute;
+            top: calc(var(--square-h) *1.5);
+            left: calc(var(--square-w) * 3);
+        
+            height: calc(var(--square-h) *5);
+            width: calc(var(--square-w) *9);
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 3rem;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+          }
+
+        .slider_container{
+
+          height: calc(var(--square-h) *6);
+          width: calc(var(--square-w) *9);
+            align-items: center;
+            display: flex;
+          }
+        
+        .slider{
+min-width: 30rem;
+height: calc(var(--square-h) *3);;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        .slider .list img{
+          margin-top: 70px;
+          min-width: calc(var(--square-h) *4);
+          max-width: calc(var(--square-h) *30);
+          height: 60%;
+          object-fit:cover;
+        }
+   }
+
+       /* For mobile phones: */
+       @media only screen and (max-width: 768px) {
+        .nav_container2 .designing_section {
+            font-size: min(max(11px, 1.3vw), 22px);
+            text-decoration-line:none;
+            color: var(--white);
+            height: fit-content;
+            position: absolute;
+            margin-right: var(--square-w);
+            margin-top: calc(var(--square-h) *7);
+            left: calc(var(--square-w) * 11);
+          }        
+          .nav_container2 .sayhi_section {
+            font-size: min(max(11px, 1.3vw), 22px);
+            text-decoration-line:none;
+            color: var(--white);
+            height: fit-content;
+            position: absolute;
+            margin-top: calc(var(--square-h) *7);
+            left: calc(var(--square-w) * 6.5);
+          }
+        .nav_container3 .fbook_section {
+          opacity: 0% ;
+        }
+        .nav_container3 .insta_section {
+          opacity: 0%;
+        }       
+        .nav_container3 .email_section{
+          opacity: 0%;
+        }
+        .title{
+          font-size: min(max(11px, 1.3vw), 22px);
+          position: absolute;
+          top: calc(var(--square-h) *1.2);
+          left: calc(var(--square-w) *4);
+        
+
+            overflow: hidden;
+            position: absolute;
+          }
+        .work_content{
+            position: absolute;
+            top: calc(var(--square-h) *1.5);
+            left: calc(var(--square-w) * 3);
+        
+            height: calc(var(--square-h) *5);
+            width: calc(var(--square-w) *9);
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 3rem;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+          }
+
+        .slider_container{
+
+          height: calc(var(--square-h) *5);
+          width: calc(var(--square-w) *9);
+            align-items: center;
+            display: flex;
+          }
+        
+        .slider{
+
+            min-width: 18rem;
+            height: 100%;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        .slider .list img{
+          margin-top: 65px;
+          min-width: calc(var(--square-h) *3);
+          max-width: calc(var(--square-h) *30);
+          height: 50%;
+          object-fit:cover;
+        }
+        
+      }
