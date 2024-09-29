@@ -1,0 +1,236 @@
+:root {
+    --orange: #F95153;
+    --blue: #0C0F30;
+    --white: #fff;
+    --square-w: 7.3vw;
+    --square-h: 13vh;
+    --gap-w: calc((var(--square-w) / 10) * 2);
+    --gap-h:calc((var(--square-h) /10) * 2);
+    --letter-w: 4.2vw;
+    letter-spacing: 0.7px;
+  }
+  
+  html{
+    margin: 0;
+    background-color: #0C0F30;
+    font-family:"Inria Sans" ;
+    cursor:cell;
+  }
+  
+  /* ------------------------------------------------------- */
+  
+  /* ---------nav bar--------------- */
+  
+  nav {
+    color: var(--blue);
+    position: fixed;
+    z-index: 10;
+  }
+  
+  
+  img{
+    width: calc(var(--square-h) *0.7);
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *0.47);
+    left: calc(var(--square-w) * 0.7);
+  }
+  
+  .nav_container2 .designing_section {
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *7);
+    left: calc(var(--square-w) * 12.2);
+  }
+  
+  .nav_container2 .sayhi_section {
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-top: calc(var(--square-h) *0.5);
+    left: calc(var(--square-w) * 12.5);
+  }
+
+  .nav_container3 .fbook_section {
+    opacity: 40% ;
+    transform: rotate(-90deg);
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *3);
+    left: calc(var(--square-w) * 12.8);
+  }
+  
+  .nav_container3 .insta_section {
+    opacity: 40% ;
+    transform: rotate(-90deg);
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *4);
+    left: calc(var(--square-w) * 12.81);
+  }
+  
+  .nav_container3 .email_section{
+    opacity: 40% ;
+    transform: rotate(-90deg);
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *5);
+    left: calc(var(--square-w) * 12.76);
+  }
+  
+/* ----------------------------------------- */
+
+/* -------------- HOME SECTION------------- */
+.side {
+    height: 100vh;
+    width: 100%;
+    
+    overflow: hidden;
+    position: absolute;
+  
+  }
+  
+  .L-title {
+    z-index: 6;
+    color: var(--orange);
+    background-color: transparent;
+    font-size: 9.5vw;
+
+  }
+  
+  .side .L-title #h1{
+    z-index: 6;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *5);
+    left: calc(var(--square-w) * 1.1);
+  }
+
+  .side .L-title #h2 {
+    z-index: 6;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) * 0.5);
+    left: calc(var(--square-w) * 7.5);
+  }
+
+  #L-side {
+    z-index: 3;
+    
+  }
+  
+  .instruction{
+
+color: var(--white);
+font-size: min(max(10px, 1.3vw), 22px);
+line-height: 1.6;
+text-align: justify;
+
+position: absolute;
+margin-right: var(--square-w);
+margin-top: calc(var(--square-h) * 3);
+left: calc(var(--square-w) * 7.7);
+right: calc(var(--square-w) *0.4);
+}
+
+/* ----------------------------------------- */
+.text {
+  z-index: -1;
+  position: absolute;
+  margin-right: var(--square-w);
+  margin-top: calc(var(--square-h) *0.5);
+  left: calc(var(--square-w) *1);
+
+  text-align: center;
+  filter: url(#ABOUTME) ;
+
+}
+.text h1{
+  position: absolute;
+
+  color:#F95153;
+  font-size: min(max(20px, 100vw), 40vw);
+    text-shadow: 0 0 10px var(--orange);
+}
+
+  /* For mobile phones: */
+  @media only screen and (max-width: 768px) {
+
+    .nav_container2 .designing_section {
+      font-size: min(max(11px, 1.3vw), 22px);
+      text-decoration-line:none;
+      color: var(--white);
+      height: fit-content;
+      position: absolute;
+      margin-right: var(--square-w);
+      margin-top: calc(var(--square-h) *7);
+      left: calc(var(--square-w) * 11);
+    }
+    
+    .nav_container2 .sayhi_section {
+        font-size: min(max(11px, 1.3vw), 22px);
+        text-decoration-line:none;
+        color: var(--white);
+        height: fit-content;
+        position: absolute;
+        margin-right: var(--square-w);
+        margin-top: calc(var(--square-h) *7);
+        left: calc(var(--square-w) * 0.7);
+    }
+    .nav_container3 .fbook_section {
+      opacity: 0% ;
+    }
+    
+    .nav_container3 .insta_section {
+      opacity: 0%;
+    }
+    
+    .nav_container3 .email_section{
+      opacity: 0%;
+    }
+
+    .instruction{
+      text-align:justify;
+      font-size: min(max(2.3vw, 1.3vw), 22px);
+      }
+      .side .L-title #h1{
+        z-index: 6;
+        position: absolute;
+        margin-right: var(--square-w);
+        margin-top: calc(var(--square-h) *2.8);
+        left: calc(var(--square-w) * 1.1);
+      }
+    
+      .side .L-title #h2 {
+        z-index: 6;
+        position: absolute;
+        margin-right: var(--square-w);
+        margin-top: calc(var(--square-h) * 3.5);
+        left: calc(var(--square-w) * 4);
+      }
+      .text {
+        margin-top: calc(var(--square-h) *0.7);
+      }
+      .text h1{
+        font-size: 120vw;
+      }
+
+  }

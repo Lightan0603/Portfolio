@@ -1,0 +1,309 @@
+:root {
+    --orange: #F95153;
+    --blue: #0C0F30;
+    --white: #fff;
+    --square-w: 7.3vw;
+    --square-h: 13vh;
+    --gap-w: calc((var(--square-w) / 10) * 2);
+    --gap-h:calc((var(--square-h) /10) * 2);
+    --letter-w: 4.2vw;
+    letter-spacing: 0.7px;   
+  }
+  
+  html{
+    margin: 0;
+    background-color: #0C0F30;
+    font-family:"Inria Sans" ;
+    cursor:cell;
+  }
+  
+  /* ------------------------------------------------------- */
+  
+  /* ---------nav bar--------------- */
+  
+  nav {
+    color: var(--blue);
+    position: fixed;
+    z-index: 10;
+  }
+  
+  
+  img{
+    width: calc(var(--square-h) *0.7);
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *0.47);
+    left: calc(var(--square-w) * 0.7);
+  }
+  
+  .nav_container2 .designing_section {
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *7);
+    left: calc(var(--square-w) * 12.2);
+  }
+  
+  .nav_container2 .myself_section {
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *7);
+    left: calc(var(--square-w) * 0.7);
+  }
+
+  .nav_container3 .fbook_section {
+    opacity:40% ;
+    transform: rotate(-90deg);
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *3);
+    left: calc(var(--square-w) * 12.8);
+  }
+  
+  .nav_container3 .insta_section {
+    opacity: 40% ;
+    transform: rotate(-90deg);
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *4);
+    left: calc(var(--square-w) * 12.81);
+  }
+  
+  .nav_container3 .email_section{
+    opacity: 40% ;
+    transform: rotate(-90deg);
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *5);
+    left: calc(var(--square-w) * 12.76);
+  }
+  
+  /* ----------------------------------------- */
+
+/* -------------- HOME SECTION------------- */
+
+.side {
+    height: 100vh;
+    width: 100%;
+    
+    overflow: hidden;
+    position: absolute;
+  }
+  
+  .L-title {
+    z-index: 6;
+    color: var(--orange);
+    background-color: transparent;
+    font-size: min(max(20px, 9.5vw), 9.5vw);
+  }
+  
+  .side .L-title {
+    z-index: 6;
+    position: absolute;
+    margin-left: var(--square-w);
+    margin-top: calc(var(--square-h) *0.5);
+    left: calc(var(--square-w) *3.7);
+  }
+  
+  #L-side {
+    z-index: 3;
+    
+  }
+
+      /* ------------------------------------------- */
+
+.instruction #h1{
+
+    color: var(--orange);
+    font-size: min(max(10px, 1.3vw), 22px);
+    
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *1.6);
+    left: calc(var(--square-w) *2.5);
+}
+
+.instruction #h2{
+
+    color: var(--orange);
+    font-size: min(max(10px, 1.3vw), 22px);
+    
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *3);
+    left: calc(var(--square-w) *9.46);
+}
+
+.instruction #h3{
+
+    color: var(--orange);
+    font-size: min(max(10px, 1.3vw), 22px);
+    
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *6.1);
+    left: calc(var(--square-w) *9.2);
+}
+    
+    /* ------------------------------------------- */
+
+      .instruction2 #h4{
+
+        color: var(--white);
+        font-size: min(max(10px, 1.3vw), 22px);
+        font-weight: lighter;
+        
+        position: absolute;
+        margin-right: var(--square-w);
+        margin-top: calc(var(--square-h) *3.5);
+        left: calc(var(--square-w) *1.7);
+    }
+
+    .instruction2 #h5{
+
+        color: var(--white);
+        font-size: min(max(12px, 1.3vw), 22px);
+        text-decoration-line: underline;
+        
+        position: absolute;
+        margin-right: var(--square-w);
+        margin-top: calc(var(--square-h) *3.9);
+        left: calc(var(--square-w) *1.7);
+    }
+
+    /* ------------------------------------------- */
+
+    .instruction3 #h6{
+
+        color: var(--white);
+        font-size: min(max(11px, 1.3vw), 22px);
+        
+        position: absolute;
+        margin-right: var(--square-w);
+        margin-top: calc(var(--square-h) *4.6);
+        left: calc(var(--square-w) *1.7);
+    }
+
+    .instruction3 #h7{
+
+        color: var(--white);
+        font-size: min(max(12px, 1.3vw), 22px);
+        text-decoration-line: underline;
+        
+        position: absolute;
+        margin-right: var(--square-w);
+        margin-top: calc(var(--square-h) *5.05);
+        left: calc(var(--square-w) *1.7);
+    }
+    .instruction3 #h8{
+
+        color: var(--white);
+        font-size: min(max(12px, 1.3vw), 22px);
+        text-decoration-line: underline;
+        
+        position: absolute;
+        margin-right: var(--square-w);
+        margin-top: calc(var(--square-h) *5.5);
+        left: calc(var(--square-w) *1.7);
+    }
+
+
+    .text {
+      z-index: -1;
+      position: absolute;
+      margin-right: var(--square-w);
+      margin-top: calc(var(--square-h) *0.5);
+      left: calc(var(--square-w) *1);
+    
+      text-align: center;
+      filter: url(#CONTACT) ;
+    
+    }
+    .text h1{
+      position: absolute;
+    
+      color:#F95153;
+      font-size: min(max(20px, 100vw), 40vw);
+    }
+
+    /* For mobile phones: */
+    @media only screen and (max-width: 768px) {
+
+      .nav_container2 .myself_section {
+        font-size: min(max(11px, 1.3vw), 22px);
+        text-decoration-line:none;
+        color: var(--white);
+        height: fit-content;
+        position: absolute;
+        margin-right: var(--square-w);
+        margin-top: calc(var(--square-h) *7);
+        left: calc(var(--square-w) * 0.7);
+    }
+      
+      .nav_container2 .designing_section {
+        font-size: min(max(11px, 1.3vw), 22px);
+        text-decoration-line:none;
+        color: var(--white);
+        height: fit-content;
+        position: absolute;
+        margin-right: var(--square-w);
+        margin-top: calc(var(--square-h) *7);
+        left: calc(var(--square-w) * 11);
+      }
+      .nav_container3 .fbook_section {
+        opacity: 0% ;
+      }
+      
+      .nav_container3 .insta_section {
+        opacity: 0%;
+      }
+      
+      .nav_container3 .email_section{
+        opacity: 0%;
+      }
+
+      .side .L-title {
+        z-index: 6;
+        position: absolute;
+        margin-left: var(--square-w);
+        margin-top: calc(var(--square-h) *2);
+        left: calc(var(--square-w) *3.7);
+      }
+      .instruction #h1{
+
+        color: var(--orange);
+        font-size: min(max(10px, 1.3vw), 22px);
+        
+        position: absolute;
+        margin-right: var(--square-w);
+        margin-top: calc(var(--square-h) *2.5);
+        left: calc(var(--square-w) *1.7);
+    }
+    .text {
+      margin-top: calc(var(--square-h) *0.7);
+    }
+    .text h1{
+      font-size: 120vw;
+    }
+
+    }
+

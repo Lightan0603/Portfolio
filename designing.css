@@ -1,0 +1,250 @@
+
+:root {
+    --orange: #F95153;
+    --blue: #0C0F30;
+    --white: #fff;
+    --square-w: 7.3vw;
+    --square-h: 13vh;
+    --gap-w: calc((var(--square-w) / 10) * 2);
+    --gap-h:calc((var(--square-h) /10) * 2);
+    --letter-w: 4.2vw;
+    letter-spacing: 0.7px;
+  }
+  
+  html{
+    margin: 0;
+    background-color: #0C0F30;
+    font-family:"Inria Sans" ;
+    overflow: hidden;
+    cursor:cell;
+  }
+  
+  /* ------------------------------------------------------- */
+  
+  /* ---------nav bar--------------- */
+  
+  nav {
+    color: var(--blue);
+    position: fixed;
+    z-index: 10;
+  }
+  
+  
+  img{
+    width: calc(var(--square-h) *0.7);
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *0.47);
+    left: calc(var(--square-w) * 0.7);
+  }
+  
+  .nav_container2 .sayhi_section {
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-top: calc(var(--square-h) *0.5);
+    left: calc(var(--square-w) * 12.5);
+  }
+  
+  .nav_container2 .myself_section {
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *7);
+    left: calc(var(--square-w) * 0.7);
+  }
+
+  .nav_container3 .fbook_section {
+    opacity: 40% ;
+    transform: rotate(-90deg);
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *3);
+    left: calc(var(--square-w) * 12.8);
+  }
+  
+  .nav_container3 .insta_section {
+    opacity: 40% ;
+    transform: rotate(-90deg);
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *4);
+    left: calc(var(--square-w) * 12.81);
+  }
+  
+  .nav_container3 .email_section{
+    opacity: 40% ;
+    transform: rotate(-90deg);
+    font-size: min(max(11px, 1.3vw), 22px);
+    text-decoration-line:none;
+    color: var(--white);
+    height: fit-content;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *5);
+    left: calc(var(--square-w) * 12.76);
+  }
+  
+  
+  /* ----------------------------------------- */
+  
+  /* -------------- HOME SECTION------------- */
+
+
+  
+  .side {
+    height: 100vh;
+    width: 100%;
+    
+    overflow: hidden;
+    position: absolute;
+  }
+  
+  .L-title {
+    z-index: 6;
+    color: var(--orange);
+    background-color: transparent;
+    font-size: min(max(20px, 10vw), 10vw);
+  }
+  
+  .side .L-title #L-title1 {
+    z-index: 6;
+    position: absolute;
+    margin-left: var(--square-w);
+    margin-top: calc(var(--square-h) *4.9);
+    left: calc(var(--square-w) *4.3);
+  }
+  .side .L-title #L-title2 {
+    z-index: 6;
+    position: absolute;
+    margin-left: var(--square-w);
+    margin-top: calc(var(--square-h) *3);
+    left: calc(var(--square-w) *8.55);
+  }
+
+
+ul{
+
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--square-h) *1.5);
+
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+}
+
+ul li a{
+  text-decoration: none;
+  color: transparent;
+font-size: min(max(10px, 10vw), 4.3vw);
+line-height: 1.4;
+
+position: absolute;
+margin-right: var(--square-w);
+margin-top: calc(var(--square-h) *1.2);
+left: calc(var(--square-w) *1.7);
+-webkit-text-fill-color: #ffffff;
+}
+
+ul li a::before {
+  content: attr(data-text);
+  position: absolute;
+  color: var(--clr);
+  width: 0;
+  overflow: hidden;
+  transition: 500ms;
+  border-right: 10px solid var(--clr);
+}
+
+ul li a:hover::before{
+  width: 100%;
+  -webkit-text-fill-color: var(--clr)
+  
+}
+  /* ----------------------------------------- */
+
+  .text {
+    z-index: -1;
+    position: absolute;
+    margin-right: var(--square-w);
+    margin-top: calc(var(--square-h) *0.5);
+    left: calc(var(--square-w) *1);
+    text-align: center;
+    filter: url(#WORK) ;
+  }
+  
+  .text h1{
+    position: absolute;
+    color:#F95153;
+    font-size: min(max(20px, 100vw), 40vw);
+  }
+
+    /* For mobile phones: */
+    @media only screen and (max-width: 768px) {
+
+      .nav_container2 .myself_section {
+        font-size: min(max(11px, 1.3vw), 22px);
+        margin-top: calc(var(--square-h) *7);
+        left: calc(var(--square-w) * 11);
+      }
+      
+      .nav_container2 .sayhi_section {
+          font-size: min(max(11px, 1.3vw), 22px);
+          margin-right: var(--square-w);
+          margin-top: calc(var(--square-h) *7);
+          left: calc(var(--square-w) * 0.7);
+      }
+      .nav_container3 .fbook_section {
+        opacity: 0% ;
+      }
+      
+      .nav_container3 .insta_section {
+        opacity: 0%;
+      }
+      
+      .nav_container3 .email_section{
+        opacity: 0%;
+      }
+
+      ul li a{
+      margin-top: calc(var(--square-h) *1.8);
+      }
+
+      ul li a::before {
+        border-right: 3px solid var(--clr);
+      }
+
+      .side .L-title #L-title1 {
+        margin-top: calc(var(--square-h) *3.5);
+        left: calc(var(--square-w) *4.8);
+      }
+      .side .L-title #L-title2 {
+        margin-top: calc(var(--square-h) *2.5);
+        left: calc(var(--square-w) *8.6);
+      }
+      .text {
+        margin-top: calc(var(--square-h) *0.7);
+      }
+      .text h1{
+        font-size: 120vw;
+      }
+
+    }
+
