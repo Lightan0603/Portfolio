@@ -69,11 +69,6 @@
     </filter>
 </svg>
 
-
-
-
-<!-- ... (phần đầu HTML của bạn giữ nguyên) ... -->
-
 <!--ver3--> 
 <div class="text2">
     <h1 id="h1">PORTFOLIO</h1>
@@ -90,38 +85,12 @@
              repeatCount="indefinite"></animate>
         </feTurbulence>
 
-        <!-- Thêm id="displacementMap" vào đây -->
-        <feDisplacementMap id="displacementMap" in="SourceGraphic" scale="20000">
+        <feDisplacementMap in="SourceGraphic" scale="20000">
         </feDisplacementMap>
     </filter>
 </svg>
 
-<!-- ... (phần còn lại của section) ... -->
-
-<!-- Dán đoạn script này vào ngay trước thẻ đóng </body> -->
-<script>
-    function updateFilterScale() {
-        // Lấy phần tử filter map bằng id của nó
-        const displacementMap = document.getElementById('displacementMap');
-
-        // Kiểm tra chiều rộng của cửa sổ trình duyệt
-        // 768px là một ngưỡng phổ biến cho thiết bị di động, bạn có thể thay đổi nếu muốn
-        if (window.innerWidth < 768) {
-            // Nếu là màn hình di động, đặt scale thành một giá trị nhỏ
-            // Bạn có thể thử nghiệm với các giá trị khác như 20, 30, 50 để tìm ra hiệu ứng ưng ý
-            displacementMap.setAttribute('scale', '3000');
-        } else {
-            // Nếu là màn hình lớn hơn (máy tính bảng, PC), giữ nguyên giá trị gốc
-            displacementMap.setAttribute('scale', '20000');
-        }
-    }
-
-    // Chạy hàm khi trang được tải lần đầu
-    window.onload = updateFilterScale;
-
-    // Chạy lại hàm mỗi khi kích thước cửa sổ thay đổi
-    window.onresize = updateFilterScale;
-</script>
+</div>
+</section>
 
 </body>
-</html>
